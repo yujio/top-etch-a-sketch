@@ -1,11 +1,12 @@
 #sketch-board {
   width: 480px;
-  height: 490px;
+  height: 480px;
   display: grid;
   grid-template-columns: repeat(16, auto);
   grid-template-rows: auto;
   outline: 2px solid black;
   margin: 0 auto;
+  background-color: white;
 }
 
 .grid-item {
@@ -17,8 +18,7 @@
 }
 
 #buttons {
-  margin: 10px;
-
+  margin: 10px 10px 30px 10px;
 }
 
 body {
@@ -28,4 +28,35 @@ body {
 
 #main-title, #main-description, #buttons {
   text-align: center;
+}
+
+
+#design {
+  background-color: darkred;
+  width: 750px;;
+  height: 750px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dials {
+  color: white;
+  background-color: white;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  position: absolute;
+  border-radius: 50px;
+  margin: 15px 15px 15px 15px;
+}
+
+#dial-left {
+  left: 0;
+}
+
+#dial-right {
+  right: 0;
 }
