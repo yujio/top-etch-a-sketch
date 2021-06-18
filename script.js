@@ -23,12 +23,19 @@ function createSketchboard(size) {
   }
 }
 
-
-
 document.getElementById('reset-button').addEventListener('click', function() {
   var sketchboard = document.getElementById('sketch-board');
   sketchboard.innerHTML = '';
 
   size = prompt('Enter a size between 1 and 64:');
-  createSketchboard(size);
+  checkSize(size);
 })
+
+checkSize = (size) => {
+  if (size > 64) {
+    size = prompt('Please enter a size smaller than 65');
+    checkSize(size);
+  } else {
+    createSketchboard(size);
+  }
+}
