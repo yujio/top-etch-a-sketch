@@ -5,25 +5,29 @@
       <meta name="keywords" content="toy, sketch, colorful">
       <meta name="author" content="Yuji Oshiro">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
       <div id="header">
-        <h1 id="main-title">Etch-A-Sketch</h1>
         <h3 id="main-description">Drag your mouse across the grid and create a sketch.<br> You may RESET your board and change its dimensions. Default is set to 16x16.</h3>
       </div>
       <div id="buttons">
         <input type="button" name="RESET" value="RESET" id="reset-button">
       </div>
       <div id="design">
-        <div id="sketch-board">
+        <div id="column-container">
+          <h1 id="main-title">Etch-eh-Sketch</h1>
+          <div id="sketch-board">
         </div>
-        <div class="dials" id="dial-left">
         </div>
-        <div class="dials" id="dial-right">
+        <div id="dials">
+          <div class="dials" id="dial-left">
+          </div>
+          <div class="dials" id="dial-right">
+          </div>
         </div>
       </div>
-      <script type="text/javascript" src="main.js"></script>
+      <script type="text/javascript" src="script.js"></script>
     </body>
 
   </html>
